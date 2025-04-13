@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowDown } from 'lucide-react';
+import Image from 'next/image';
 
 interface HeroSectionProps {
   title?: string;
@@ -42,9 +43,11 @@ export function HeroSection({
           <div className="absolute left-1/2 transform -translate-x-1/2 -top-8 -rotate-6 bg-[#1FFF6B] text-black font-semibold py-2 px-6 z-10 w-[300px] text-center flex items-center justify-center text-3xl skew-x-[-20deg] border-2 border-[#FFF]">
             Sh*t Gets Built
           </div>
-          <img 
+          <Image 
             src="/voding-hero-logo.png" 
             alt="Voding Logo" 
+            width={210}
+            height={96}
             className="w-[210px] h-24 object-contain"
           />
         </div>

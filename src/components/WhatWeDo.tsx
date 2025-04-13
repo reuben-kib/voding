@@ -1,32 +1,8 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 export function WhatWeDo() {
-  const conversationData = [
-    {
-      sender: 'You',
-      message: "I've got an idea... but it's kinda messy. Like, duct tape and Notion boards messy."
-    },
-    {
-      sender: 'Voding',
-      message: "Say less. We've seen worse. We'll turn it into a launchable product. 💪"
-    },
-    {
-      sender: 'You',
-      message: "You guys gonna ghost me halfway through? (I've got baggage 🧳)"
-    },
-    {
-      sender: 'Voding',
-      message: "Hell no! We reply, we show up, we build, we ship. 💚"
-    },
-    {
-      sender: 'You',
-      message: "Okay, but will I actually be able to launch this? Like it's not just a pretty prototype?"
-    }
-  ];
-  
   return (
     <section className="relative text-white bg-[#161D1D]">
       <div className="max-w-4xl mx-auto w-full px-4">

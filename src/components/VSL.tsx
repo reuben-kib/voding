@@ -3,15 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-interface VSLProps {
-  videoSrc?: string;
-  posterImage?: string;
-}
-
-export function VSL({
-  videoSrc = '/your-video-url.mp4',
-  posterImage = '/video-poster.svg',
-}: VSLProps) {
+export function VSL() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlayClick = () => {
@@ -83,10 +75,10 @@ export function VSL({
         {/* Text Content */}
         <div className="text-center mt-12 space-y-4">
           <p className="text-xl md:text-2xl">
-            We're a <span className="text-[#1FFF6B] font-semibold">small team that helps founders and startups build</span> actual software
+            We&apos;re a <span className="text-[#1FFF6B] font-semibold">small team that helps founders and startups build</span> actual software
           </p>
           <p className="text-lg md:text-xl text-gray-400">
-            <span className="text-gray-400">not</span> prototypes, <span className="text-gray-400">not</span> vaporware, <span className="text-gray-400">not</span> "coming soon" landing pages.
+            <span className="text-gray-400">not</span> prototypes, <span className="text-gray-400">not</span> vaporware, <span className="text-gray-400">not</span> &quot;coming soon&quot; landing pages.
           </p>
           <p className="text-xl md:text-2xl font-medium mt-8 mb-50">
             Real tools. Real features. Really shipped.
